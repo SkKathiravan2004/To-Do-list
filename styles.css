@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: none;
+}
+
+button {
+    padding: 0.75rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #00ffcc;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #00e6b8;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+.task-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.delete-btn, .edit-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    color: red;
+}
+
+.edit-btn:hover {
+    color: yellow;
+}
